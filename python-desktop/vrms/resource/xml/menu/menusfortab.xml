@@ -1,0 +1,29 @@
+<sysmenu id="sysmenu" des="System Menus" key="0000" parent="None">
+	<menu id="oms" des="订单管理" key="1000" parent="sysmenu"  visibility="true">
+		<menuitem id="createOrder" des="开单" key="1001"  visibility="true"></menuitem>
+		<menuitem id="queryOrder" des="查询订单" key="1002"  visibility="true"></menuitem>
+	</menu>
+	<menu id="customer" des="客户管理" key="2000" parent="sysmenu"  visibility="true">
+		<menuitem id="queryCustomer" des="客户查询" key="2001"  visibility="true"></menuitem>
+		<menuitem id="reservation" des="预约管理" key="2002"  visibility="true"></menuitem>
+		<menuitem id="customerReport" des="客户报表" key="2002"  visibility="true"></menuitem>
+	</menu>
+	<menu id="storeMgt" des="店铺管理" key="3000" parent="sysmenu"  visibility="true">
+		<menuitem id="stockmgt" des="仓库管理" key="3001"  visibility="true"></menuitem>
+		<menuitem id="stockLevle" des="库存管理" key="3002"  visibility="true"></menuitem>
+		<menuitem id="product" des="产品管理" key="3003"  visibility="true"></menuitem>
+		<menuitem id="productPrice" des="价格管理" key="3003"  visibility="true"></menuitem>
+		<menuitem id="finance" des="财务管理" key="3004"  visibility="true"></menuitem>
+		<menuitem id="branch" des="分店管理" key="3005"  visibility="true"></menuitem>
+	</menu>
+	<menu id="report" des="报表管理" key="4000" parent="sysmenu"  visibility="true">
+		<menuitem id="orderReport" des="订单报表" key="4001"  visibility="true"></menuitem>
+		<menuitem id="productReport" des="产品报表" key="4002"  visibility="true"></menuitem>
+		<menuitem id="stockReport" des="库存报表" key="4003"  visibility="true"></menuitem>
+		<menuitem id="financeReport" des="财务报表" key="4004"  visibility="true"></menuitem>
+	</menu>
+	<menu id="testfunction" des="测试功能" key="999" parent="sysmenu" visibility="true">
+		<menuitem id="test1" des="测试1" key="9991"  visibility="true"></menuitem>
+		<menuitem id="test2" des="测试2" key="9992"  visibility="true"></menuitem>
+	</menu>
+</sysmenu>

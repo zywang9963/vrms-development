@@ -1,0 +1,14 @@
+<sysmenu id="sysmenu" des="System Menus" key="0000" parent="None">
+	<menu id="oms" des="订单管理" key="1000" parent="sysmenu">
+		<menuitem id="createOrder" des="开单" key="1001"></menuitem>
+		<menuitem id="queryOrder" des="查询订单" key="1002"></menuitem>
+	</menu>
+	<menu id="stockmgt" des="仓库管理" key="2000" parent="sysmenu">
+		<menu id="stocklevelmgt" des="库存管理" key="2001" parent="stockmgt">
+			<menuitem id="inbound" des="入库" key="20011"></menuitem>
+			<menuitem id="outbound" des="出库/调拨" key="20012"></menuitem>
+		</menu>
+		<menuitem id="createStock" des="创建仓库" key="2002"></menuitem>
+		<menuitem id="queryStock" des="查询仓库" key="2003"></menuitem>
+	</menu>
+</sysmenu>
