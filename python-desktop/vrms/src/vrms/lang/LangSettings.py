@@ -10,9 +10,13 @@ class LangSettings():
         _ = l.gettext
         
     def set_value(self, value):
-        l = gettext.translation('lang', localdir, languages=[value])
-        _ = l.gettext
-        
+        if value is None:
+            l = gettext.translation('lang', localdir, languages=[self.defaultValue])
+            _ = l.gettext
+        else:
+            l = gettext.translation('lang', localdir, languages=[value])
+            _ = l.gettext
+            
     def get_value(self):
         try:
             return _.gettext.GetLanguage()

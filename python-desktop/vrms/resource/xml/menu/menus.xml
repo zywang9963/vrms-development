@@ -1,35 +1,35 @@
 <sysmenu id="sysmenu" des="System Menus" key="0000" parent="None">
-	<menu id="system" des="系统设置" key="100" parent="sysmenu">
-		<menuitem id="connect" des="服务器设置" key="101"></menuitem>
-		<menu id="language" des="语言" key="102">
-			<menuitem id="chn" des="简体中文(Simple Chinese)" key="1021"></menuitem>
-			<menuitem id="eng" des="英文(English)" key="1022"></menuitem>
+	<menu id="system" des="系统设置" key="100"  visibility="true" parent="sysmenu">
+		<menuitem id="connect" des="服务器设置" key="101"  visibility="true"></menuitem>
+		<menu id="language" des="语言" key="102" visibility="false">
+			<menuitem id="chn" des="简体中文(Simple Chinese)" key="1021"  visibility="false"></menuitem>
+			<menuitem id="eng" des="英文(English)" key="1022"  visibility="false"></menuitem>
 		</menu>
-		<menu id="font" des="字体" key="103">
-			<menuitem id="a" des="宋体" key="1031"></menuitem>
-			<menuitem id="b" des="黑体" key="1032"></menuitem>
-			<menuitem id="c" des="仿宋体" key="1033"></menuitem>
+		<menu id="font" des="字体" key="103"  visibility="true">
+			<menuitem id="a" des="宋体" key="1031"  visibility="true"></menuitem>
+			<menuitem id="b" des="黑体" key="1032" visibility="true"></menuitem>
+			<menuitem id="c" des="仿宋体" key="1033" visibility="true"></menuitem>
 		</menu>
-		<menu id="code" des="系统编码" key="104">
-			<menuitem id="utf8" des="UTF-8" key="1041"></menuitem>
-			<menuitem id="unicode" des="UNICODE" key="1042"></menuitem>
-			<menuitem id="GBK" des="GBK" key="1043"></menuitem>
+		<menu id="code" des="系统编码" key="104" visibility="true">
+			<menuitem id="utf8" des="UTF-8" key="1041" visibility="true"></menuitem>
+			<menuitem id="unicode" des="UNICODE" key="1042" visibility="true"></menuitem>
+			<menuitem id="GBK" des="GBK" key="1043" visibility="true"></menuitem>
 		</menu>
 		<seperator id="seperator" ></seperator>
-		<menuitem id="switchAccount" des="切换用户" key="105"></menuitem>
-		<menuitem id="logout" des="安全退出" key="106"></menuitem>
+		<menuitem id="switchAccount" des="切换用户" key="105" visibility="true"></menuitem>
+		<menuitem id="logout" des="安全退出" key="106" visibility="true"></menuitem>
 	</menu>
-	<menu id="advancedSettings" des="高级设置" key="200" parent="sysmenu">
-		<menuitem id="sync" des="同步到云端" key="201"></menuitem>
-		<menuitem id="backup" des="系统备份" key="202"></menuitem>
-		<menuitem id="restore" des="系统数据恢复" key="203"></menuitem>
+	<menu id="advancedSettings" des="高级设置" key="200"  visibility="true" parent="sysmenu">
+		<menuitem id="sync" des="同步到云端" key="201" visibility="true"></menuitem>
+		<menuitem id="backup" des="系统备份" key="202" visibility="true"></menuitem>
+		<menuitem id="restore" des="系统数据恢复" key="203" visibility="true"></menuitem>
 		<seperator id="seperator" ></seperator>
-		<menuitem id="initialization" des="初始化" key="204"></menuitem>
+		<menuitem id="initialization" des="初始化" key="204" visibility="true"></menuitem>
 	</menu>
-	<menu id="help" des="帮助" key="300" parent="sysmenu">
-		<menuitem id="guide" des="使用说明" key="301"></menuitem>
-		<menuitem id="license" des="注册" key="302"></menuitem>
+	<menu id="help" des="帮助" key="300" visibility="true" parent="sysmenu">
+		<menuitem id="guide" des="使用说明" key="301" visibility="true"></menuitem>
+		<menuitem id="license" des="注册" key="302" visibility="true"></menuitem>
 		<seperator id="seperator" ></seperator>
-		<menuitem id="about" des="关于vrms" key="303"></menuitem>
+		<menuitem id="about" des="关于vrms" key="303" visibility="true"></menuitem>
 	</menu>
 </sysmenu>

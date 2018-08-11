@@ -1,5 +1,6 @@
 import wx
 from xml.etree import ElementTree as ET
+from vrms.lang.LangSettings import LangSettings
 
 xmlPath = '../resource/xml/menu/menus.xml'
 
@@ -21,7 +22,7 @@ class SystemMenus(wx.MenuBar):
         
     def buildMenu(self, menubar, allnodes, parentMenu):
         for child in allnodes:
-            if child.tag == "menu":
+            if child.tag == "menu" and child.get("visibility").strip().lower() == "true":
                 menu = wx.Menu()
                 if child.get("parent") == "sysmenu":
                     menubar.Append(menu, title=child.get("des"))
@@ -29,7 +30,7 @@ class SystemMenus(wx.MenuBar):
                     parentMenu.Append(wx.ID_ANY, child.get("des"), menu)
                     
                 self.buildMenu(menubar, child, menu)
-            elif child.tag == "menuitem":
+            elif child.tag == "menuitem"  and child.get("visibility").strip().lower() == "true":
                 # parentMenu.AppendSeparator()
                 menuitem = wx.MenuItem(parentMenu, id=int(child.get("key")), text=child.get("des"), kind=wx.ITEM_NORMAL)
                 parentMenu.Append(menuitem)
@@ -40,7 +41,11 @@ class SystemMenus(wx.MenuBar):
         id = event.GetId()
         if id == 101:
             pass
-        elif id == 102:
+        elif id == 1021:
+            pass
+        elif id == 1022:
+            #self.parent.frame.Refresh()
+            
             pass
         elif id == 201:
             pass
