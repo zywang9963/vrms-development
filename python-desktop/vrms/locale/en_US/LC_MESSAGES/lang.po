@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -10,12 +10,18 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf8\n"
-"Content-Transfer-Encoding: gb2312\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
-msgid "����ά�ޱ���ϵͳ"
+msgid "车辆维修管理系统"
 msgstr "Vehicle Repair & Maintenance System"
+
+msgid " 订单管理"
+msgstr "Order Management"
+
+msgid "开单"
+msgstr "Create Order"
 
 
 

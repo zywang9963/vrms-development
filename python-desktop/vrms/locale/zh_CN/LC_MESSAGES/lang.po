@@ -18,4 +18,11 @@ msgid "Vehicle Repair & Maintenance System"
 msgstr "汽车维修保养系统"
 
 
+msgid "Order Management"
+msgstr "订单管理"
+
+msgid "Create Order"
+msgstr "开单"
+
+
 
