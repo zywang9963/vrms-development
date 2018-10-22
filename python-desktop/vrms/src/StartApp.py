@@ -1,18 +1,22 @@
 import wx
 
 from vrms.views.main.GuiManager import GuiManager
-
+from vrms.lang.LangSettings import LangSettings
+from vrms.app.sys.SysUtilies import SysUtilies
+from vrms.app.sys.DBUtilities import DBUtilities
 
 class App(wx.App):
     def OnInit(self):
+        #SysUtilies().SystemInit(DBUtilities().getConn())
         self.manager = GuiManager(self.UpdateUI)
-        self.frame = self.manager.GetFrame(1, "en_US")
+        print("the default language is :"+LangSettings().get_defaultLang())
+        self.frame = self.manager.GetFrame(1, LangSettings().get_defaultLang())
         self.frame.Show(True)
         return True
 
     def UpdateUI(self, type):
         self.frame.Show(False)
-        self.frame = self.manager.GetFrame(type, "en_US")
+        self.frame = self.manager.GetFrame(type, LangSettings.get_defaultLang())
         self.frame.Show(True)
 
 

@@ -11,6 +11,7 @@ class MainFrame(wx.Frame):
     def __init__(self, parent=None ,id=-1, UpdateUI = None, lang = None):
         LangSettings().set_value(lang)
         _ = LangSettings().get_lang()
+        
         self.frame = wx.Frame
         self.frame.__init__(self, parent, title=_("Vehicle Repair & Maintenance System"),  name="vrms",)
         self.Center()
